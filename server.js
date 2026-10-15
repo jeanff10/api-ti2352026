@@ -5,11 +5,11 @@ const app = express();
 // rota ou endpoint // request, response
 
 app.get('/ping', (req, res) => {
-    return res.json({message:'ping pong'});
+    return res.json({message:'API TI-325 rodando....'});
 })
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
     //console.log('Servidor rodando em... http://localhost:3000')
-    console.log('Servidor rodando em... http://localhost:${PORT}')
+    console.log('Servidor rodando em... http://localhost:3000')
 })

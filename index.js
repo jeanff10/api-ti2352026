@@ -10,7 +10,15 @@ app.get('/', (req, res) => {
 // 2) Rota POST de usuário (exemplo)
 app.post('/usuario', (req, res) => {
   const { nome, idade } = req.body;
-  res.status(201).json({ nome, idade });
+
+  if (!nome || idade === undefined) {
+    return res.status(400).json({ erro: 'Informe nome e idade.' });
+  }
+
+  res.status(201).json({
+    mensagem: 'Usuário cadastrado com sucesso!',
+    usuario: { nome, idade },
+  });
 });
 
 // 3) Rota POST de produto

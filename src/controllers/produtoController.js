@@ -4,6 +4,7 @@ const produtoController = {
     criarProduto: (req, res) =>{
         const { codigo, nome, qtde, preco } = req.body;
         // 1. Validação simples dos campos obrigatórios
+        console.log(req.body)
         if(!codigo || !nome || !qtde|| !preco){
             return res.status(400).json({
                 sucesso:false,
@@ -26,7 +27,7 @@ const produtoController = {
         criadoEm: new Date().toISOString()
         }
         //Chama o Model para persistir no arquivo JSON
-        const produtoalvo = produtoModel.salvar
+        const produtoSalvo = produtoModel.salvar(novoProduto);
 
         // Retorna a resposta HTTP 201 (Created)
         return res.status(201).json({
@@ -40,7 +41,7 @@ const produtoController = {
         const produtos = produtoModel.buscarTodos();
         return res.json({
             sucesso: true,
-            total: produtos.lenght,
+            total: produtos.length,
             produtos
         })
     }

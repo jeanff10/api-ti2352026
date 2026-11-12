@@ -1,9 +1,10 @@
 [
   {
-    "codigo": 200,
-    "nome": "COCA COLA",
-    "quantidade": 10,
-    "preco": 9.99,
-    "total": 99.9
+    "codigo": 100,
+    "nome": "BOLACHA",
+    "quantidade": 50,
+    "preco": 3.99,
+    "total": 199.5,
+    "criadoEm": "2026-11-12T01:28:28.912Z"
   }
 ]

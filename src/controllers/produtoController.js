@@ -4,7 +4,6 @@ const produtoController = {
     criarProduto: (req, res) =>{
         const { codigo, nome, qtde, preco } = req.body;
         // 1. Validação simples dos campos obrigatórios
-        console.log(req.body)
         if(!codigo || !nome || !qtde|| !preco){
             return res.status(400).json({
                 sucesso:false,
@@ -46,4 +45,4 @@ const produtoController = {
         })
     }
 }
-module.exports = produtoController;    
+module.exports = produtoController;

@@ -6,5 +6,21 @@
     "preco": 3.99,
     "total": 199.5,
     "criadoEm": "2026-11-12T01:28:28.912Z"
+  },
+  {
+    "codigo": 100,
+    "nome": "BOLACHA",
+    "quantidade": 50,
+    "preco": 3.99,
+    "total": 199.5,
+    "criadoEm": "2026-11-12T23:04:55.271Z"
+  },
+  {
+    "codigo": 250,
+    "nome": "GUARANÁ ANTÁRTICA",
+    "quantidade": 100,
+    "preco": 8.99,
+    "total": 899,
+    "criadoEm": "2026-11-12T23:05:32.011Z"
   }
 ]
